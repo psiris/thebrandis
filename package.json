@@ -1,0 +1,20 @@
+{
+  "name": "thebrandis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx servor --reload --browse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psiris/thebrandis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psiris/thebrandis/issues"
+  },
+  "homepage": "https://github.com/psiris/thebrandis#readme"
+}
