@@ -1,0 +1,12 @@
+header {
+  font-size: large;
+  text-decoration-color: #dd9999;
+}
+/*This is using "type selectors" (type is "header") to adding css in html to contorl the entire code*/
+
+.center {
+  text-align: center;
+}
+
+/*This is using "class selectors" to adding css in html. 
+The "class" can be used in the html wiht _attribute_ "class=center"*/
