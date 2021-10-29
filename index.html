@@ -1,24 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheBrandIs</title>
-</head>
-<body>
-    <h1>the brand is</h1>
-    <h2>the brand is</h2>
-    <h3>the brand is</h3>
-    <p>I am a paragraph</p>
-    <a href="/iris.html">Link</a>
-    <div>
-        <button onclick="window.location = '/iris.html'">Click me</button>
-        <img src="/images/github.png" width="30px" height="30px" />
-    </div>
-    <form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The brand is</title>
+        <link href="index_styles.css" rel="stylesheet">
+        <!--**Link** the css file and the **relationship** is stylesheet-->
+        <script>
+           document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').addEventListener('submit', function() {
+                    let brand_name = document.querySelector('#brand_name').value;
+                    alert("You've added "+ brand_name);
+                });
+            });
+        </script>
+        <!--incorporate javascript in the code. This is to define a function that can be used later
+            "DOMContentLoaded" means run that "Event Listener" after the the whole code has run-->
+         
+    </head>
+
+    <body>
+        <header class="center">
+            Header
+        </header>
+        <!--The "class" style is **linked** with the css code-->
+
+        <main>
+            Where is the main
+        </main>  
         
-        <input type="text" placeholder="Enter Your Email" />
-    </form>
-</body>
+        <a href="/paragraph.html">Paragraph</a>
+        <!-- Relative path can start with "/" -->
+        <br>
+        <a href="/LinkDecor.html">Link Styles</a>
+        <br>
+        <a href="https://google.com">Google</a> 
+        <!-- need to include the protocal (http://) when using href-->
+        
+        <div>
+            <button onclick="window.location = '/iris.html'">Click me</button>
+            <img src="/images/github.png" width="30px" height="30px" img alt="git logo"/>
+        </div>
+
+        <form0>
+            <input type="text" placeholder="Enter Your Email" />
+            <br>
+        </form0>
+
+        <form>
+            <input id = "brand_name" placeholder = "What is the brand name?" type="text"
+            autocomplete="off" autofocus = "on">
+            <!--Autofocus let the mouse (or the user) go to the 'focused' place upon reload-->
+            <input type = "submit" value = "submit">
+        </form>
+
+        <footer style="font-size:x-small; text-align: justify;">
+            Since 19920607 
+        </footer>
+        <!--an example of having css inside html-->
+    </body>
 </html>
